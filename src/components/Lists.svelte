@@ -57,11 +57,13 @@
 
 <style>
     .list {
+        width: 50%;
         padding: 15px;
-        background: green;
+        background: #3D85C6;
     }
 
     .list-status {
+        width: 50%;
         margin: 0;
         text-align: center;
         color: #ffffff;
@@ -69,6 +71,7 @@
         font-size: 1.1em;
     }
 </style>
+
 
 <div class="list">
     <NewItem on:newitem={handleNewItem} />

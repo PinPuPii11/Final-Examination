@@ -4,8 +4,11 @@
 	import Login from './Login.svelte';
 	import Logout from './Logout.svelte';
 	import Menu from './Menu.svelte';
+	import Confirm from "./stores.js";
+	// import ComfirmPayment from "./Confirm.svelte";
 </script>
 
+<center>
 <h1>SoftLottery</h1>
 
 {#if !$islogin}
@@ -14,12 +17,12 @@
 	<List />
 	{#if $mode == 'menu'}
 	<Menu />
-	<!-- {:else if $mode == 'deposit'}
-	<Deposit />
-	{:else if $mode == 'withdraw'}
-	<Withdraw />
-	{:else if $mode == 'balance'}
-	<CheckBalance /> -->
+	{:else if $mode == 'confirm'}
+	<Confirm />
+	<!-- {:else if $mode == 'confirmPayment'}
+	<ConfirmPayment /> -->
 	{/if}
 <Logout />
 {/if}
+
+</center>
