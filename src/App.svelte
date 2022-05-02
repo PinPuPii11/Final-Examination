@@ -7,7 +7,6 @@
 </script>
 
 <h1>SoftLottery</h1>
-<h2>งวดนี้รวย!!</h2>
 
 {#if !$islogin}
 <Login />
